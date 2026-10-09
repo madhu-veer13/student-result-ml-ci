@@ -55,6 +55,8 @@ jobs:
           cp student_result_model.pkl release_candidate/
           cp metrics.json release_candidate/
           cp requirements.txt release_candidate/
+          cp Dockerfile release_candidate/
+          cp .dockerignore release_candidate/
           echo "Student Result Prediction ML Application" > release_candidate/DEPLOYMENT.txt
           echo "Run: python app.py" >> release_candidate/DEPLOYMENT.txt
           echo "Endpoint: POST /predict" >> release_candidate/DEPLOYMENT.txt
