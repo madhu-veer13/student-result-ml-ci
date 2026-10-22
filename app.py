@@ -23,7 +23,7 @@ def load_model():
         )
     return joblib.load(MODEL_PATH)
 
-
+@app.get("/health")
 @app.get("/")
 def health_check():
     return jsonify({
